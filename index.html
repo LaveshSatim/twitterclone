@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bg-gray-900 flex h-screen mx-auto">
+      <!-- left -->
+
+      <div class="">
+        <!-- logo -->
+        <div class="twitterbtn h-14 w-14">
+          <span>
+            <i class="fa-brands fa-twitter text-twitterblue"> </i>
+          </span>
+        </div>
+
+        <!-- buttons -->
+        <div class="space-y-2.5 mt-3 justify-start">
+          <div class="twitterbtn">
+            <i class="fa-solid fa-house"></i>
+            <span class="hidden xl:inline">Home</span>
+          </div>
+
+          <div class="twitterbtn">
+            <i class="fa-solid fa-hashtag"></i>
+            <span class="hidden xl:inline">Explore</span>
+          </div>
+
+          <div class="twitterbtn">
+            <i class="fa-solid fa-bell"></i>
+            <span class="hidden xl:inline">Notifications</span>
+          </div>
+
+          <div class="twitterbtn">
+            <i class="fa-solid fa-message"></i>
+            <span class="hidden xl:inline">Message</span>
+          </div>
+
+          <div class="twitterbtn">
+            <i class="fa-solid fa-book"></i>
+            <span class="hidden xl:inline">Bookmarks</span>
+          </div>
+          <div class="twitterbtn">
+            <i class="fa-solid fa-user"></i>
+            <span class="hidden xl:inline">Profile</span>
+          </div>
+          <div class="twitterbtn">
+            <i class="fa-solid fa-angle-right"></i>
+            <span class="hidden xl:inline">More</span>
+          </div>
+        </div>
+
+        <button
+          class="hidden xl:inline mt-20 ml-20 bg-twitterblue rounded-full w-56 h-12 hover:bg-blue-500"
+        >
+          Tweet
+        </button>
+      </div>
+
+      <!-- main -->
+
+      <div class="flex-grow border-l border-r border-gray-700 ml-4 max-w-2xl">
+        <h1
+          class="text-lg font-bold text-twitterwhite p-2 border-b border-gray-700"
+        >
+          Home
+        </h1>
+
+        <div>
+          <div
+            class="ml-3 flex space-x-2 border-b border-gray-700 mt-4 mb-2 p-2"
+          >
+            <img
+              class="h-11 w-11 rounded-full cursor-pointer"
+              src="https://media.licdn.com/dms/image/C5103AQERhzYo1yV6Jg/profile-displayphoto-shrink_800_800/0/1563349021637?e=1678924800&v=beta&t=_deB7WrFIQe_f5b8pWqUn3l3OnWk9dP4znWDn9EyiYI"
+              alt="profile"
+            />
+
+            <div class="w-full">
+              <!-- <textarea
+                cols="30"
+                rows="2"
+                class="w-full bg-transparent  text-s outline-none text-yellow-50 placeholder-gray-400"
+                placeholder="whats happening ?"
+              >
+              </textarea> -->
+
+              <textarea
+                id="message"
+                rows="2  "
+                class="block w-full rounded-lg dark:placeholder-gray-400 bg-transparent text-twitterwhite outline-none"
+                placeholder="what's happening ?"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <div class="flex text-center space-x-2 ml-3">
+              <div
+                class="w-9 h-9 bg-gray-900 flex justify-center items-center rounded-full hover:bg-slate-300 cursor-pointer"
+              >
+                <i class="fa-solid fa-image text-twitterblue"></i>
+              </div>
+              <div
+                class="w-9 h-9 bg-gray-900 flex justify-center items-center rounded-full hover:bg-slate-300 cursor-pointer"
+              >
+                <i class="fa-solid fa-face-smile text-twitterblue"></i>
+              </div>
+              <div
+                class="w-9 h-9 bg-gray-900 flex justify-center items-center rounded-full hover:bg-slate-300 cursor-pointer"
+              >
+                <i class="fa-solid fa-clipboard-list text-twitterblue"></i>
+              </div>
+              <div
+                class="w-9 h-9 bg-gray-900 flex justify-center items-center rounded-full hover:bg-slate-300 cursor-pointer"
+              >
+                <i class="fa-solid fa-box-archive text-twitterblue"></i>
+              </div>
+            </div>
+            <button
+              class="bg-twitterblue text-twitterwhite px-4 py-1 font-bold hover:text-blue-500 rounded-full"
+            >
+              tweet
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- right -->
+
+      <div class="hidden lg:inline w-96">
+        <!-- search -->
+        <div class="mt-2 mx-auto xl:w-11/12 w-[350px]">
+          <div class="flex items-center p-3 bg-gray-800 rounded-full">
+            <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
+            <input
+              type="text"
+              name="search"
+              placeholder="Twitter Search"
+              class="bg-transparent outline-none text-twitterwhite ml-2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
